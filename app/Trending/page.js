@@ -44,7 +44,7 @@ const Trending = () => {
                 <p calssName="">{article.description}</p>
               </div>
               <div className="auth">
-                <h2 > by <a>{article.author}</a></h2>
+                <h2 > by <a href={`https://www.google.com/search?q=${encodeURIComponent(article.author)}`} target="_blank" >{article.author}</a></h2>
               </div>
             </div>
           </div>

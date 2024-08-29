@@ -58,7 +58,11 @@ const Page = () => {
                 <div className="auth">
                   <h2>
                     {" "}
-                    by <a>{article.author}</a>
+                    by <a href={`https://www.google.com/search?q=${encodeURIComponent(article.author)}`} target="_blank">
+  {article.author}
+</a>
+
+
                   </h2>
                 </div>
               </div>
