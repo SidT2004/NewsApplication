@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+
+  height: 100px;
+  z-index: 2;
+  margin-top: 0px;
+  width: 100%;
+  
+  border-top: none;
+  border-bottom: 2px solid black;
+  position: fixed;
+
+
+}
+.main{
+  background-color: #FEFAE0;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  height: fit-content;
+}
+.cards{
+  margin-top: 100px;
+}
+.card:hover{
+  cursor: pointer;
+  
+}
+.card {
+  width: 100%;
+  border-bottom:3px solid rgb(137, 137, 174) ;
+  height: 300px;
+  display: flex;
+  padding: 13px;
+  
+  gap: 5px;
+
+}
+
+.image {
+  height: 45vh;
+  width: 400px;
+  /* border: 2px solid red; */
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+
+}
+
+.image img {
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 400px;
+  border-radius: 20px;
+  image-rendering: pixelated;
+  opacity: 0.810;
+
+}
+
+.title h1 {
+  font-family: "Baskervville SC", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-size: x-large;
+}
+
+.info {
+  /* border: 2px solid; */
+  margin-left: 3px;
+}
+
+.desc {
+  /* border: 1px solid red; */
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-left: 15px;
+}
+
+.date {
+  font-family: 'Lucida Sans', Arial;
+  font-size: 16px;
+  margin-left: 16px;
+  color: rgb(56, 54, 54);
+
+}
+
+.auth {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.auth a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  color: rgb(76, 76, 222);
+  font-style: normal;
+}
+.image :hover{
+  border-radius: 0px;
+  transform: scale(1.002);
+  transition: 1s;
+  opacity: 1;
+}
+.title h1:hover{
+  font-size:xx-large;
+  transition-duration: 1s;
+}
+.search_bar{
+  border: 1px solid black;
+  
+}
+.hoverelem a:hover{
+  color: rgb(236, 133, 55);
+  transition: 0.5s;
+}
